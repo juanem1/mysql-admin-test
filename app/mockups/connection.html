@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Conection</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--12-col">
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Connection</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="host" />
+                <label class="mdl-textfield__label" for="host">Host</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="username" />
+                <label class="mdl-textfield__label" for="username">Username</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="password" />
+                <label class="mdl-textfield__label" for="password">Password</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="database" />
+                <label class="mdl-textfield__label" for="database">Database</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="port" pattern="-?[0-9]*(\.[0-9]+)?" />
+                <label class="mdl-textfield__label" for="port">Port</label>
+                <span class="mdl-textfield__error">Invalid port number</span>
+              </div>
+            </form>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="table-content.html">
+              Connect
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</body>
+</html>

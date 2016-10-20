@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Table Content</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <!-- Header -->
+    <header class="mdl-layout__header">
+      <div class="mdl-layout-icon"></div>
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout__title">Table 1</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="table-structure.html">Structure</a>
+          <a class="mdl-navigation__link" href="table-content.html">Content</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Left menu -->
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout__title">Tables</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">Table 1</a>
+        <a class="mdl-navigation__link" href="#">Table 2</a>
+        <a class="mdl-navigation__link" href="#">Table 3</a>
+      </nav>
+    </div>
+    <!-- Main content -->
+    <main class="mdl-layout__content">
+      <table class="mdl-data-table mdl-js-data-table" style="width:100%">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>username</th>
+            <th>password</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>admin 1</td>
+            <td>&4{\F2g3S*W)^P"#*/'YlfR@)^4}<6$Zq9[_7dH$!NzY.7>_30qK,e|d{)DK|*C,6q u*/G_\%5x&Zn5>2p)7# [-?Jn5hu].)~Y</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>admin 2</td>
+            <td>^%%7/\\9()_s_>m/?(@3"+,:2<\{=l+52~9++,c'.$'4p>=74^7<_G\$*AU:Kuc_%kR,c}hI6?bJ=C3? ]L}{4%Y}x;][+[V>G#e</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>admin 3</td>
+            <td>0v2J~e=3562u("=3!a)|r!g=,=3=*}_V6&_!*8|=wn+[<-3@M@a{\t4N5o3#])9-#y@$vK6Z/)e8zD>(_^43(ss&'j)<,78#p\fu</td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="add-row" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="position:absolute;right:2rem;bottom:2rem;">
+        <i class="material-icons">add</i>
+      </button>
+      <div class="mdl-tooltip mdl-tooltip--left" data-mdl-for="add-row">Add row</div>
+    </main>
+  </div>
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</body>
+</html>

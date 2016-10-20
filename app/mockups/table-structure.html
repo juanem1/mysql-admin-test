@@ -1,0 +1,114 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Table Structure</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <!-- Header -->
+    <header class="mdl-layout__header">
+      <div class="mdl-layout-icon"></div>
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout__title">Table 1</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="table-structure.html">Structure</a>
+          <a class="mdl-navigation__link" href="table-content.html">Content</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Left menu -->
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout__title">Tables</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">Table 1</a>
+        <a class="mdl-navigation__link" href="#">Table 2</a>
+        <a class="mdl-navigation__link" href="#">Table 3</a>
+      </nav>
+    </div>
+    <!-- Main content -->
+    <main class="mdl-layout__content">
+      <table class="mdl-data-table mdl-js-data-table" style="width:100%">
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Length</th>
+            <th>Insigned</th>
+            <th>Zerofill</th>
+            <th>Binary</th>
+            <th>Allow Null</th>
+            <th>Key</th>
+            <th>Default</th>
+            <th>Extra</th>
+            <th>Encoding</th>
+            <th>Collation</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>id</td>
+            <td>int</td>
+            <td>11</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td></td>
+            <td></td>
+            <td>None</td>
+            <td>UTF-8 UNICODE</td>
+            <td>utf8_general_ci</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>username</td>
+            <td>varchar</td>
+            <td>256</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td></td>
+            <td></td>
+            <td>None</td>
+            <td>UTF-8 UNICODE</td>
+            <td>utf8_general_ci</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>password</td>
+            <td>varchar</td>
+            <td>256</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td></td>
+            <td></td>
+            <td>None</td>
+            <td>UTF-8 UNICODE</td>
+            <td>utf8_general_ci</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="add-row" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="position:absolute;right:2rem;bottom:2rem;">
+        <i class="material-icons">add</i>
+      </button>
+      <div class="mdl-tooltip mdl-tooltip--left" data-mdl-for="add-row">Add row</div>
+    </main>
+  </div>
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</body>
+</html>
